@@ -28,7 +28,3 @@ else:
     print(f'It took you {co} guesses.')
 
        
-
-
-#if len(guess) != len(secret):
-        #print('Sorry, the guess must have the same number of letters as the secret word.')
