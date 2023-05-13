@@ -7,15 +7,15 @@ show = print(f'Your hint is: {display}')
 guess = input('What is your guess?: ').lower()
 co = 1
 
-while guess != display:
+while guess != secret:
     i = 0
-    if guess in display:
-        while display.find(guess, i) != -1:
-            i = display.find(guess, i)
+    if guess in secret:
+        while secret.find(guess, i) != -1:
+            i = secret.find(guess, i)
             display = display[:i] + guess + display[i + 1:]
             i += 1
             
-        if guess in display:  
+        if guess in secret:  
             print('\n---------------------------')
             print(f'Correct letter {guess.capitalize()}, guess again!')
             print('---------------------------')
